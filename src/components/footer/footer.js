@@ -12,7 +12,7 @@ function Footer() {
         </p>
         <div className="flex space-x-4">
           <a
-            href="https://github.com/gabrielts212/"
+            href="https://github.com/gabrielts212/desafio-falqcon/tree/main"
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,7 +28,7 @@ function Footer() {
             <FaLinkedin size={40} color="#6d98fd" />
           </a>
           <a
-            href="https://github.com/gabrielts212/"
+            href="https://desafio-falqcon.vercel.app/"
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"

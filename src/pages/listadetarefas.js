@@ -9,9 +9,9 @@ const MyApp = () => {
   return (
     <StrictMode>
       <Provider store={store}>
-        <Header/>
+        <Header />
         <List />
-        <Footer/>
+        <Footer />
       </Provider>
     </StrictMode>
   );

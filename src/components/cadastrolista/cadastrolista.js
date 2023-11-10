@@ -49,9 +49,11 @@ const Register = () => {
       </video>
 
       <div className="bg-gray-800 bg-opacity-60 rounded-md max-w-md p-10 border-opacity-60 z-10 text-white">
-        <h2 className="text-3xl font-bold mb-4 text-blue-500">Crie sua conta</h2>
+        <h2 className="text-3xl font-bold mb-4 text-blue-500">
+          Crie sua conta
+        </h2>
         <form onSubmit={handleForm} className="space-y-4">
-          <div className={`form-control ${error ? 'is-invalid' : ''}`}>
+          <div className={`form-control ${error ? "is-invalid" : ""}`}>
             <label htmlFor="username" className="text-white">
               Nome de Usuário
             </label>
@@ -66,7 +68,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className={`form-control ${error ? 'is-invalid' : ''}`}>
+          <div className={`form-control ${error ? "is-invalid" : ""}`}>
             <label htmlFor="email" className="text-white">
               Email
             </label>
@@ -81,7 +83,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className={`form-control ${error ? 'is-invalid' : ''}`}>
+          <div className={`form-control ${error ? "is-invalid" : ""}`}>
             <label htmlFor="password" className="text-white">
               Senha
             </label>

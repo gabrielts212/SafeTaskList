@@ -8,7 +8,7 @@ const Header = ({ title }) => {
     <div>
       <div className="bg-blue-500 p-4 text-white flex items-center justify-between">
         <div>
-        <CustomLink to="/">
+          <CustomLink to="/">
             <motion.div whileHover={{ rotate: 720 }}>
               <Image
                 src={Logo}
@@ -18,7 +18,7 @@ const Header = ({ title }) => {
                 className="cursor-pointer"
               />
             </motion.div>
-            </CustomLink>
+          </CustomLink>
         </div>
         <div>
           <h1 className="text-2xl font-bold">{title}</h1>
