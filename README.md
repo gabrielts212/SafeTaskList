@@ -16,7 +16,7 @@ A aplicação possui as seguintes funcionalidades:
 
 As principais tecnologias utilizadas no meu projeto
 
-- **Next/React/Redux:** Para construir a interface de usuário.
+- **Next/React/Redux:**  Para construir a interface e outras partes da aplicação.
 - **JWT (JSON Web Tokens):** Para autenticação dos endpoints da API= https://jwt.io/.
 - **Form:** Para proteger a lista de tarefas com senha.
 - **Tailwind:** Para estruturação  responsividade e estilo da interface.
