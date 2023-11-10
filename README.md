@@ -5,6 +5,7 @@
 O meu projeto é uma aplicação web que oferece funcionalidades de login, cadastro de usuários,e lista de tarefa que esta protegida pelo form A aplicação é responsiva, ou seja, se adapta a diferentes dispositivos e utiliza autenticação por token para proteger os endpoints de consulta de dados. 
 
 ## **2. Uso 🖱**
+**importante** Se a autenticação de login não entrar de primeira, é só cadastrar novamente com o mesmo nome de usuário, email e senha e efetuar novamente o login  para ter acesso a lista de tarefas.
 
 A aplicação possui as seguintes funcionalidades:
 
