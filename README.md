@@ -1,4 +1,4 @@
-## Primeiro passo npm i e depois npm run dev ✔
+## Primeiro passo npm i e depois npm run dev 
 
 ## **1. Introdução**
 
