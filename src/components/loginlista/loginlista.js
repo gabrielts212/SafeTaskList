@@ -29,7 +29,7 @@ const Login = () => {
       const json = await response.json();
       if (response.status !== 200) throw new Error(json);
       setCookie("authorization", json);
-      router.push("/teste");
+      router.push("/listadetarefas");
     } catch (err) {
       setError(err.message);
     }

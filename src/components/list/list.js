@@ -44,7 +44,7 @@ const List = () => {
           <div className="flex flex-col ">
             <div  >
               <h2 className="text-lg font-semibold  flex  mb-2 ">{task.title}</h2>
-              <p className="text-lg font-semibold  mb-2">{task.description}</p>
+              <p className="text-base  ">{task.description}</p>
             </div>
             
           </div>
