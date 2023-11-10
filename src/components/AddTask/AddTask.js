@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { GrClose} from "react-icons/Gr";
 import { IoAddCircleOutline } from "react-icons/io5";
 
 const AddTask = ({ addTask, setAddTaskModal }) => {
@@ -29,37 +29,38 @@ const AddTask = ({ addTask, setAddTaskModal }) => {
   };
 
   return (
-    <div className="w-full h-screen bg-black/30 absolute flex justify-center items-center">
-      <div className="w-[400px] bg-white rounded">
-        <div className="flex flex-col space-y-4 p-4">
-          <div className="flex justify-between text-black">
-            <h1 className="text-xl font-semibold">Add New Task</h1>
-            <button onClick={closeHandle}>
-              <AiOutlineCloseCircle />
-            </button>
-          </div>
-          <input
-            type="text"
-            placeholder="Task Title"
-            className="w-full outline-0 p-2 text-black"
-            autoFocus
-            onChange={inputTitleHandle}
-          />
-          <textarea
-            placeholder="Task Description"
-            className="w-full h-20 outline-0 p-2 text-black"
-            onChange={inputDescriptionHandle}
-          />
-          <button
-            className="w-28 p-2 rounded-md flex justify-center items-center space-x-1 bg-blue-500"
-            onClick={addTaskHandler}
-          >
-            <IoAddCircleOutline size={"1.1rem"} />
-            <span>Add</span>
-          </button>
-        </div>
+  <div className="w-full h-screen bg-black/30 absolute flex justify-center items-center">
+  <div className="w-[90%] md:w-[400px] bg-white rounded-md">
+    <div className="flex flex-col space-y-4 p-4">
+      <div className="flex justify-between items-center text-black">
+        <h1 className="text-xl md:text-2xl font-semibold">Adicionar nova tarefa</h1>
+        <button onClick={closeHandle}>
+          <GrClose size={"1.3rem"} />
+        </button>
       </div>
+      <input
+        type="text"
+        placeholder="Título da tarefa"
+        className="w-full outline-none p-2 text-black border border-gray-300 rounded-md"
+        autoFocus
+        onChange={inputTitleHandle}
+      />
+      <textarea
+        placeholder="Descrição da tarefa"
+        className="w-full h-20 outline-none p-2 text-black border border-gray-300 rounded-md"
+        onChange={inputDescriptionHandle}
+      />
+      <button
+        className="w-full md:w-28 p-2 rounded-md flex justify-center items-center space-x-1 bg-blue-500 text-white"
+        onClick={addTaskHandler}
+      >
+        <IoAddCircleOutline size={"1.5rem"} />
+        <span>Adicionar</span>
+      </button>
     </div>
+  </div>
+</div>
+
   );
 };
 

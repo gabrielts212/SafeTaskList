@@ -1,11 +1,15 @@
-import React from 'react'
-import Loginlista from '@/components/loginlista/loginlista'
+import React from "react";
+import Loginlista from "@/components/loginlista/loginlista";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 const login = () => {
   return (
     <div>
-        <Loginlista/>
+      <Header />
+      <Loginlista />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default login
+export default login;

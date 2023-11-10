@@ -38,7 +38,7 @@ const Register = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center relative bg-transparent text-red-500">
-      {/* <video
+      <video
         autoPlay
         muted
         loop
@@ -46,9 +46,9 @@ const Register = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src="video.mp4" type="video/mp4" />
-      </video> */}
+      </video>
 
-      <div className="bg-gray-800 bg-opacity-60 rounded-md max-w-md p-10 border-black border-2 border-opacity-60 z-10 text-white">
+      <div className="bg-gray-800 bg-opacity-60 rounded-md max-w-md p-10 border-opacity-60 z-10 text-white">
         <h2 className="text-3xl font-bold mb-4 text-blue-500">Crie sua conta</h2>
         <form onSubmit={handleForm} className="space-y-4">
           <div className={`form-control ${error ? 'is-invalid' : ''}`}>
@@ -105,7 +105,7 @@ const Register = () => {
             Cadastrar
           </button>
         </form>
-        <a href="/login" className="block mt-4 text-white hover:text-blue-500 pl-1">
+        <a href="/" className="block mt-4 text-white hover:text-blue-500 pl-1">
           Já possui uma conta?
         </a>
       </div>
