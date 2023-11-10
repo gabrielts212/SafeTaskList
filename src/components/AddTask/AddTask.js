@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GrClose} from "react-icons/Gr";
+import { AiOutlineClose} from "react-icons/ai";
 import { IoAddCircleOutline } from "react-icons/io5";
 
 const AddTask = ({ addTask, setAddTaskModal }) => {
@@ -35,7 +35,7 @@ const AddTask = ({ addTask, setAddTaskModal }) => {
       <div className="flex justify-between items-center text-black">
         <h1 className="text-xl md:text-2xl font-semibold">Adicionar nova tarefa</h1>
         <button onClick={closeHandle}>
-          <GrClose size={"1.3rem"} />
+          <AiOutlineClose size={"1.3rem"} />
         </button>
       </div>
       <input
