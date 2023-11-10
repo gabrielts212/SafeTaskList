@@ -1,23 +1,33 @@
 import { useState } from "react";
-
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoAddCircleOutline } from "react-icons/io5";
-import { useDispatch } from 'react-redux'
-import { Add } from '../../redux/AddTask'
 
-const AddTask = ({ setAddTaskModal }) => {
-  const [inputText, setInputText] = useState("");
+const AddTask = ({ addTask, setAddTaskModal }) => {
+  const [inputTitle, setInputTitle] = useState("");
+  const [inputDescription, setInputDescription] = useState("");
+
   const closeHandle = () => {
     setAddTaskModal(false);
   };
-  const inputHandle = (e) => {
+
+  const inputTitleHandle = (e) => {
     const { value } = e.target;
-    setInputText(value);
+    setInputTitle(value);
   };
-  const addTask = () => {
-    dispatch(Add(inputText));
-    setAddTaskModal(false);
+
+  const inputDescriptionHandle = (e) => {
+    const { value } = e.target;
+    setInputDescription(value);
   };
+
+  const addTaskHandler = () => {
+    if (inputTitle && inputDescription) {
+      addTask({ title: inputTitle, description: inputDescription });
+      setInputTitle("");
+      setInputDescription("");
+    }
+  };
+
   return (
     <div className="w-full h-screen bg-black/30 absolute flex justify-center items-center">
       <div className="w-[400px] bg-white rounded">
@@ -28,21 +38,25 @@ const AddTask = ({ setAddTaskModal }) => {
               <AiOutlineCloseCircle />
             </button>
           </div>
-
           <input
             type="text"
-            placeholder="new task"
+            placeholder="Task Title"
             className="w-full outline-0 p-2 text-black"
             autoFocus
-            onChange={inputHandle}
+            onChange={inputTitleHandle}
           />
-        <button
-               
-               onClick={()=> addTask()}
-               className='w-28 p-2 rounded-md flex justify-center items-center space-x-1 bg-yellow-400'>
-                   <IoAddCircleOutline size={"1.1rem"}/>
-                   <span>Add</span>
-               </button>
+          <textarea
+            placeholder="Task Description"
+            className="w-full h-20 outline-0 p-2 text-black"
+            onChange={inputDescriptionHandle}
+          />
+          <button
+            className="w-28 p-2 rounded-md flex justify-center items-center space-x-1 bg-blue-500"
+            onClick={addTaskHandler}
+          >
+            <IoAddCircleOutline size={"1.1rem"} />
+            <span>Add</span>
+          </button>
         </div>
       </div>
     </div>
