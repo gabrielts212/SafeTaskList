@@ -11,7 +11,7 @@ A aplicação possui as seguintes funcionalidades:
 
 - **Login e Cadastro:** Você pode se cadastrar como um novo usuário ou fazer login com as credenciais previamente registradas. Erros de usuário ou senha incorreta serão indicados visualmente.
 - **Listagem de tarefas:** Após fazer login, você terá acesso à lista de tarefa que lista, cria, atualiza e remover tarefas.
-- **Redirecionamento para a Página Principal:** Clicar no ícone do header redireciona para a página principal quando esta na página do mapa.
+- **Redirecionamento para a Página Principal:** Clicar no ícone do header redireciona para a página principal.
 
 ## **3. Tecnologias Utilizadas 🖥**
 
