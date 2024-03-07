@@ -28,7 +28,7 @@ function Footer() {
             <FaLinkedin size={40} color="#6d98fd" />
           </a>
           <a
-            href="https://desafio-falqcon.vercel.app/"
+            href="https://github.com/gabrielts212/SafeTaskList/tree/main"
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"
