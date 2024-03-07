@@ -12,7 +12,7 @@ function Footer() {
         </p>
         <div className="flex space-x-4">
           <a
-            href="https://github.com/gabrielts212/desafio-falqcon/tree/main"
+            href="https://github.com/gabrielts212"
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"
